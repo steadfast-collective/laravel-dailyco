@@ -1,0 +1,29 @@
+{
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Steadfastcollective\\LaravelDailyco\\ServiceProvider"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Steadfastcollective\\LaravelDaily\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "name": "steadfastcollective/laravel-dailyco",
+    "description": "Laravel SDK for Daily.co's REST API",
+    "require": {
+        "php": "^7.3",
+        "laravel/framework": "^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Steadfastcollective\\LaravelDaily\\": "src"
+        }
+    }
+}
