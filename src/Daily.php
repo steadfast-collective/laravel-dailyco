@@ -6,7 +6,8 @@ use Illuminate\Support\Facades\Http;
 
 class Daily
 {
-    use Endpoints\Rooms;
+    use Endpoints\Rooms,
+        Endpoints\MeetingTokens;
 
     protected function get(string $endpoint, array $data = [], array $headers = [])
     {
@@ -41,6 +42,6 @@ class Daily
             'Authorization' => 'Bearer ' . config('daily.token'),
         ]);
 
-        return Http::withHeaders($headers)->{$method}($endpoint, $data)->json();
+        return Http::withHeaders($headers)->{$method}($endpoint, $data);
     }
 }

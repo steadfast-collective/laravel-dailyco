@@ -57,3 +57,19 @@ use Steadfastcollective\LaravelDailyco\DailyFacade;
 
 $rooms = DailyFacade::deleteRoom('roomId', [...]);
 ```
+
+### Meeting tokens
+
+**Create meeting token**
+```
+use Steadfastcollective\LaravelDailyco\DailyFacade;
+
+$rooms = DailyFacade::createMeetingToken([...]);
+```
+
+**Get meeting token**
+```
+use Steadfastcollective\LaravelDailyco\DailyFacade;
+
+$rooms = DailyFacade::meetingToken('meetingToken', [...]);
+```
