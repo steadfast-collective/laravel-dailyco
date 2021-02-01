@@ -17,7 +17,7 @@ DAILY_API_KEY=
 
 ## Usage
 
-To make API requests with this package, you can either use the Facade, which we would recommend, or you could just manually new up the `Steadfastcollective\LaravelDailyco\Daily` class and call the methods from there.
+To make API requests with this package, you can either use the Facade, which we would recommend, or you could just manually new up the `SteadfastCollective\LaravelDailyco\Daily` class and call the methods from there.
 
 All of our below examples use the Facade.
 
@@ -25,35 +25,35 @@ All of our below examples use the Facade.
 
 **Get rooms**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $rooms = DailyFacade::rooms();
 ```
 
 **Create room**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $room = DailyFacade::createRoom([...]);
 ```
 
 **Get room**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $room = DailyFacade::room('roomId', [...]);
 ```
 
 **Update room**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $room = DailyFacade::updateRoom('roomId', [...]);
 ```
 
 **Delete room room**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 DailyFacade::deleteRoom('roomId', [...]);
 ```
@@ -62,14 +62,14 @@ DailyFacade::deleteRoom('roomId', [...]);
 
 **Create meeting token**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $token = DailyFacade::createMeetingToken([...]);
 ```
 
 **Get meeting token**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $token = DailyFacade::meetingToken('meetingToken', [...]);
 ```
@@ -78,49 +78,49 @@ $token = DailyFacade::meetingToken('meetingToken', [...]);
 
 **Get recordings**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $recordings = DailyFacade::recordings([...]);
 ```
 
 **Get a recording**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $recording = DailyFacade::recording('recordingId', [...]);
 ```
 
 **Delete a recording**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $recording = DailyFacade::deleteRecording('recordingId', [...]);
 ```
 
 **Get recording access link**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $accessLink = DailyFacade::recordingAccessLink('recordingId', [...]);
 ```
 
 **Get recording download link**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $downloadLink = DailyFacade::recordingDownload('recordingId', [...]);
 ```
 
 **Create recording composite recipe**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $recipe = DailyFacade::createRecordingCompositesReceipe('recordingId', [...]);
 ```
 
 **Get recording composites**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $composites = DailyFacade::recordingComposites('recordingId', [...]);
 ```
@@ -129,7 +129,7 @@ $composites = DailyFacade::recordingComposites('recordingId', [...]);
 
 **Get logs**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $logs = DailyFacade::logs();
 ```
@@ -138,7 +138,7 @@ $logs = DailyFacade::logs();
 
 **Retrieve meeting analytics**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $analytics = DailyFacade::meetingAnalytics();
 ```
@@ -147,7 +147,7 @@ $analytics = DailyFacade::meetingAnalytics();
 
 **Active participants**
 ```php
-use Steadfastcollective\LaravelDailyco\DailyFacade;
+use SteadfastCollective\LaravelDailyco\DailyFacade;
 
 $participants = DailyFacade::presence();
 ```
@@ -160,4 +160,4 @@ The exception message will contain the endpoint that was attempted to be reached
 
 ## Security
 
-If you find any security vulnerabilities in this package, instead of using the issue tracker, please directly email [dev@steadfastcollective.com](mailto:dev@steadfastcollective.com).
+If you find any security vulnerabilities in this package, instead of using the issue tracker, please directly email [dev@SteadfastCollective.com](mailto:dev@SteadfastCollective.com).

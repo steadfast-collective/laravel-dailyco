@@ -1,6 +1,6 @@
 <?php
 
-namespace Steadfastcollective\LaravelDailyco;
+namespace SteadfastCollective\LaravelDailyco;
 
 use Illuminate\Support\Facades\Facade;
 

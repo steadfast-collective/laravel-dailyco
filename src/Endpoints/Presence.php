@@ -1,6 +1,6 @@
 <?php
 
-namespace Steadfastcollective\LaravelDailyco\Endpoints;
+namespace SteadfastCollective\LaravelDailyco\Endpoints;
 
 class Presence
 {

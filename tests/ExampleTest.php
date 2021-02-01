@@ -1,6 +1,6 @@
 <?php
 
-namespace Steadfastcollective\LaravelDailyco\Tests;
+namespace SteadfastCollective\LaravelDailyco\Tests;
 
 use Orchestra\Testbench\TestCase;
 
