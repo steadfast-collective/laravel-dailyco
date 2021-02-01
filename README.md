@@ -76,7 +76,54 @@ $token = DailyFacade::meetingToken('meetingToken', [...]);
 
 ### Recordings
 
-TODO
+**Get recordings**
+```php
+use Steadfastcollective\LaravelDailyco\DailyFacade;
+
+$recordings = DailyFacade::recordings([...]);
+```
+
+**Get a recording**
+```php
+use Steadfastcollective\LaravelDailyco\DailyFacade;
+
+$recording = DailyFacade::recording('recordingId', [...]);
+```
+
+**Delete a recording**
+```php
+use Steadfastcollective\LaravelDailyco\DailyFacade;
+
+$recording = DailyFacade::deleteRecording('recordingId', [...]);
+```
+
+**Get recording access link**
+```php
+use Steadfastcollective\LaravelDailyco\DailyFacade;
+
+$accessLink = DailyFacade::recordingAccessLink('recordingId', [...]);
+```
+
+**Get recording download link**
+```php
+use Steadfastcollective\LaravelDailyco\DailyFacade;
+
+$downloadLink = DailyFacade::recordingDownload('recordingId', [...]);
+```
+
+**Create recording composite recipe**
+```php
+use Steadfastcollective\LaravelDailyco\DailyFacade;
+
+$recipe = DailyFacade::createRecordingCompositesReceipe('recordingId', [...]);
+```
+
+**Get recording composites**
+```php
+use Steadfastcollective\LaravelDailyco\DailyFacade;
+
+$composites = DailyFacade::recordingComposites('recordingId', [...]);
+```
 
 ### Logs
 
