@@ -24,56 +24,93 @@ All of our below examples use the Facade.
 ### Rooms
 
 **Get rooms**
-```
+```php
 use Steadfastcollective\LaravelDailyco\DailyFacade;
 
 $rooms = DailyFacade::rooms();
 ```
 
 **Create room**
-```
+```php
 use Steadfastcollective\LaravelDailyco\DailyFacade;
 
-$rooms = DailyFacade::createRoom([...]);
+$room = DailyFacade::createRoom([...]);
 ```
 
 **Get room**
-```
+```php
 use Steadfastcollective\LaravelDailyco\DailyFacade;
 
-$rooms = DailyFacade::room('roomId', [...]);
+$room = DailyFacade::room('roomId', [...]);
 ```
 
 **Update room**
-```
+```php
 use Steadfastcollective\LaravelDailyco\DailyFacade;
 
-$rooms = DailyFacade::updateRoom('roomId', [...]);
+$room = DailyFacade::updateRoom('roomId', [...]);
 ```
 
 **Delete room room**
-```
+```php
 use Steadfastcollective\LaravelDailyco\DailyFacade;
 
-$rooms = DailyFacade::deleteRoom('roomId', [...]);
+DailyFacade::deleteRoom('roomId', [...]);
 ```
 
 ### Meeting tokens
 
 **Create meeting token**
-```
+```php
 use Steadfastcollective\LaravelDailyco\DailyFacade;
 
-$rooms = DailyFacade::createMeetingToken([...]);
+$token = DailyFacade::createMeetingToken([...]);
 ```
 
 **Get meeting token**
-```
+```php
 use Steadfastcollective\LaravelDailyco\DailyFacade;
 
-$rooms = DailyFacade::meetingToken('meetingToken', [...]);
+$token = DailyFacade::meetingToken('meetingToken', [...]);
 ```
 
 ### Recordings
 
 TODO
+
+### Logs
+
+**Get logs**
+```php
+use Steadfastcollective\LaravelDailyco\DailyFacade;
+
+$logs = DailyFacade::logs();
+```
+
+### Meeting Analytics
+
+**Retrieve meeting analytics**
+```php
+use Steadfastcollective\LaravelDailyco\DailyFacade;
+
+$analytics = DailyFacade::meetingAnalytics();
+```
+
+### Presence
+
+**Active participants**
+```php
+use Steadfastcollective\LaravelDailyco\DailyFacade;
+
+$participants = DailyFacade::presence();
+```
+
+### Handling errors
+
+This package will throw an exception whenever a response comes back from Daily.co as a non-200 status code.
+
+The exception message will contain the endpoint that was attempted to be reached and the status code that actually came back.
+
+## Security
+
+If you find any security vulnerabilities in this package, instead of using the issue tracker, please directly email [dev@steadfastcollective.com](mailto:dev@steadfastcollective.com).
