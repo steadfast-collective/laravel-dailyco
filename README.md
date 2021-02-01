@@ -73,3 +73,7 @@ use Steadfastcollective\LaravelDailyco\DailyFacade;
 
 $rooms = DailyFacade::meetingToken('meetingToken', [...]);
 ```
+
+### Recordings
+
+TODO
