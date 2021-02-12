@@ -2,7 +2,7 @@
 
 namespace SteadfastCollective\LaravelDailyco\Endpoints;
 
-class Presence
+trait Presence
 {
     public function presence(array $data = [])
     {
