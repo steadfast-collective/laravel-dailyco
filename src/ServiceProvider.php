@@ -1,6 +1,6 @@
 <?php
 
-namespace SteadfastCollective\LaravelDaily;
+namespace SteadfastCollective\LaravelDailyco;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
