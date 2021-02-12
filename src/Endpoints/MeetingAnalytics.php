@@ -2,7 +2,7 @@
 
 namespace SteadfastCollective\LaravelDailyco\Endpoints;
 
-class MeetingAnalytics
+trait MeetingAnalytics
 {
     public function meetingAnalytics(array $data = [])
     {
