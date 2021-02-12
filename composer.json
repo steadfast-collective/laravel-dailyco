@@ -2,7 +2,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SteadfastCollective\\LaravelDailyco\\ServiceProvider"
+                "SteadfastCollective\\LaravelDaily\\ServiceProvider"
             ]
         }
     },
