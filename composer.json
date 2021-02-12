@@ -2,13 +2,13 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SteadfastCollective\\LaravelDaily\\ServiceProvider"
+                "SteadfastCollective\\LaravelDailyco\\ServiceProvider"
             ]
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SteadfastCollective\\LaravelDaily\\Tests\\": "tests"
+            "SteadfastCollective\\LaravelDailyco\\Tests\\": "tests"
         }
     },
     "require-dev": {
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SteadfastCollective\\LaravelDaily\\": "src"
+            "SteadfastCollective\\LaravelDailyco\\": "src"
         }
     }
 }
