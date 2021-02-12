@@ -13,6 +13,12 @@ class ServiceProvider extends BaseServiceProvider
         ], 'laravel-daily-config');
 
         $this->mergeConfigFrom(__DIR__.'/../config/daily.php', 'daily');
+        
+        $this->app->booted(function () {
+            $this->app->bind('Laravel_Dailyco', function () {
+                return new Daily;
+            });
+        });
     }
 
     public function register()
