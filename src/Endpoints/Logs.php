@@ -2,7 +2,7 @@
 
 namespace SteadfastCollective\LaravelDailyco\Endpoints;
 
-class Logs
+trait Logs
 {
     public function logs(array $data = [])
     {
