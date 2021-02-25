@@ -154,10 +154,16 @@ $participants = DailyFacade::presence();
 
 ### Handling errors
 
-This package will throw an exception whenever a response comes back from Daily.co as a non-200 status code.
+This package will throw an exception whenever a non 200 response is returned from Daily's API. The full list of exceptions is provided below.
 
-The exception message will contain the endpoint that was attempted to be reached and the status code that actually came back.
+| **Status Code**         | **Exception**                                                            |
+|-------------------------|--------------------------------------------------------------------------|
+| 400 (Bad Request)       | `SteadfastCollective\LaravelDailyco\Exceptions\BadRequestException`      |
+| 401 (Unauthorized)      | `SteadfastCollective\LaravelDailyco\Exceptions\UnauthorizedException`    |
+| 404 (Not Found)         | `SteadfastCollective\LaravelDailyco\Exceptions\NotFoundException`        |
+| 429 (Too Many Requests) | `SteadfastCollective\LaravelDailyco\Exceptions\TooManyRequestsException` |
+| 5xx (Server Errors)     | `SteadfastCollective\LaravelDailyco\Exceptions\ServerErrorException`     |
 
 ## Security
 
-If you find any security vulnerabilities in this package, instead of using the issue tracker, please directly email [dev@SteadfastCollective.com](mailto:dev@SteadfastCollective.com).
+If you find any security vulnerabilities in this package, please directly email [dev@steadfastcollective.com](mailto:dev@steadfastcollective.com), rather than using the issue tracker.
