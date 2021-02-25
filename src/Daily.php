@@ -48,10 +48,26 @@ class Daily
 
         $response = Http::withHeaders($headers)->{$method}($endpoint, $data);
 
-        if ($response->status() !== 200) {
-            throw new \Exception("Request failed. Status code {$response->status()} on {$endpoint}.");
+        if ($response->status() === 200) {
+            return $response->json();
         }
 
-        return $response->json();
+        if ($response->status() === 404) {
+            throw new Exceptions\NotFoundException("Daily API: 404 Not Found - {$endpoint}");
+        }
+
+        if ($response->status() === 400) {
+            throw new Exceptions\BadRequestException("Daily API: Bad Request - {$endpoint}");
+        }
+
+        if ($response->status() === 401) {
+            throw new Exceptions\BadRequestException("Daily API: Unauthorized - {$endpoint}");
+        }
+
+        if ($response->status() === 429) {
+            throw new Exceptions\TooManyRequestsException("Daily API: Too Many Requests - {$endpoint}");
+        }
+
+        throw new Exceptions\ServerErrorException("Daily API: Server Error - {$endpoint}");
     }
 }
