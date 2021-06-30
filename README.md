@@ -1,6 +1,16 @@
 # Laravel Daily.co SDK
 
-**Still in development**
+<p align="center">
+    <a href="https://packagist.org/packages/steadfastcollective/laravel-dailyco">
+        <img src="https://img.shields.io/packagist/dt/steadfastcollective/laravel-dailyco" alt="Total Downloads">
+    </a>
+    <a href="https://packagist.org/packages/steadfastcollective/laravel-dailyco">
+        <img src="https://img.shields.io/packagist/v/steadfastcollective/laravel-dailyco" alt="Latest Stable Version">
+    </a>
+    <a href="https://packagist.org/packages/steadfastcollective/laravel-dailyco">
+        <img src="https://img.shields.io/packagist/l/steadfastcollective/laravel-dailyco" alt="License">
+    </a>
+</p>
 
 This package is an unofficial SDK for [Daily.co](https://daily.co)'s REST API.
 
