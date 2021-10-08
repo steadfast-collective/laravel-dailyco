@@ -18,7 +18,7 @@
     "name": "steadfastcollective/laravel-dailyco",
     "description": "Laravel SDK for Daily.co's REST API",
     "require": {
-        "php": "^7.4",
+        "php": "^7.4|^8.0",
         "laravel/framework": "^7.0|^8.0"
     },
     "autoload": {
