@@ -6,6 +6,6 @@ trait Logs
 {
     public function logs(array $data = [])
     {
-        return $this->get('/logs', $data);
+        return $this->get('logs/api', $data);
     }
 }

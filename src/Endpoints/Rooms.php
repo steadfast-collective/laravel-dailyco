@@ -28,4 +28,9 @@ trait Rooms
     {
         return $this->delete("rooms/{$roomName}", $data);
     }
+
+    public function roomSessionData(mixed $roomName, array $data = [])
+    {
+        return $this->get("rooms/{$roomName}/get-session-data", $data);
+    }
 }

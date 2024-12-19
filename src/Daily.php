@@ -11,7 +11,8 @@ class Daily
         Endpoints\MeetingTokens,
         Endpoints\Presence,
         Endpoints\Recordings,
-        Endpoints\Rooms;
+        Endpoints\Rooms,
+        Endpoints\Hooks;
 
     protected function get(string $endpoint, array $data = [], array $headers = [])
     {
